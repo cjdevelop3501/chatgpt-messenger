@@ -4,9 +4,10 @@ import { Inter } from 'next/font/google';
 import SideBar from '@/components/SideBar';
 import { SessionProvider } from '@/components/SessionProvider';
 import { getServerSession } from 'next-auth';
-import { authOptions } from './api/auth/[...nextauth]/route';
+
 import Login from '@/components/Login';
 import ClientProvider from '@/components/ClientProvider';
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 
 const inter = Inter({ subsets: ['latin'] })
 
